@@ -1,0 +1,8 @@
+
+cmake_minimum_required (VERSION 3.8)
+
+add_library (geom_lib STATIC geometry_vectors.cpp geometry_vectors.h)
+
+add_executable (hunt cat_and_mouse.cpp geometry_vectors.h )
+
+target_link_libraries(hunt geom_lib)
